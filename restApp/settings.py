@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-kk0odnjp&j9lky^!s7r8*obooz&sxw=ab9z$(j*zg)+zy1%1$3
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["noza-todo.herokuapp.com"]
 
 # Application definition
 
@@ -59,6 +59,7 @@ MIDDLEWARE = [
 
     # this is for frontend and backend
     'corsheaders.middleware.CorsMiddleware',
+'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'restApp.urls'
@@ -128,6 +129,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles')
 STATICFILES_DIRS = [
     BASE_DIR / "frontend/build/static/"
 
