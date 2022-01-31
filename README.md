@@ -14,3 +14,7 @@
 #### Some Pictures of App
 
 ![homePage](assets/list_view.png)
+![update1](assets/update1.png)
+![update2](assets/update2.png)
+![api1](assets/api_view.png)
+![api2](assets/api_list.png)
