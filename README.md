@@ -13,4 +13,4 @@
 
 #### Some Pictures of App
 
-[homePage](assets/list_view.png)
+![homePage](assets/list_view.png)
